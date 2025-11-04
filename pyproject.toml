@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "lora-la"
+version = "0.1.0"
+description = "Packages for LoRA-LA-UCU"
+authors = ["Ivan Havlytskyi", "Oleksandr Kharytonov", "Oleh Chovhaniuk"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "3.13.2"
+numpy = "^2.3.4"
+pandas = "^2.3.3"
+tqdm = "^4.67.1"
+torch = "^2.9.0"
+lightning = "^2.5.5"
+transformers = "^4.57.1"
+datasets = "^4.4.0"
+peft = "^0.17.1"
+ipykernel = "^7.1.0"
+hydra-core = "^1.3.2"
+omegaconf = "^2.3.0"
+wandb = "^0.22.3"
+evaluate = "^0.4.6"
+seqeval = "^1.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
